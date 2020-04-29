@@ -31,13 +31,13 @@
 </head>
 
 <script>
-    a=[];
-    i=0;
+    a = [];
+    i = 0;
 </script>
 
 <body class="body-wrapper">
     <!-- ======= Header ======= -->
-    <div id="header">
+    <div id="header" class="p-0 m-0">
     </div>
     <!-- End Header -->
     <main id="main">
@@ -67,9 +67,9 @@
                         onclick=pop('{{product.id}}') data-toggle="modal" data-target="#about">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="{{product.productimage1}}" class="img-fluid" alt="">
-                                <a href="#" class="link-preview " title="Preview"><i
-                                        class="ion ion-eye"></i></a>
+                                <img style=" width: 100%;height:100%;" src="{{product.productimage1}}" class="img-fluid"
+                                    alt="">
+                                <a href="#" class="link-preview " title="Preview"><i class="ion ion-eye"></i></a>
                             </figure>
 
                             <div class="portfolio-info">

@@ -590,7 +590,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 0;
   width: 40px;
   height: 5px;
-  background-color: #5672f9;
+  background-color: #0A7486;
 }
 
 .section-title p {
@@ -613,24 +613,23 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f6f6f7;
   text-align: center;
   padding: 5px 0;
 }
 
-.clients img {
-  width: 40%;
+.clients img:hover {
   -webkit-filter: grayscale(100);
   filter: grayscale(100);
+  transform: scale(1.1);
+}
+
+.clients img {
+  width: 40%;
+  -webkit-filter: none;
+  filter: none;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-}
-
-.clients img:hover {
-  -webkit-filter: none;
-  filter: none;
-  transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
@@ -685,8 +684,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .w-title {
-  font-size: 1.2rem;
-  color: #000;
+  font-size: 1.1rem;
+  color: #343A40;
 }
 .sect-pt4 {
   padding-top: 4rem;
@@ -752,7 +751,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #00c28e;
+  color: rgb(112, 210, 228);
   font-size: 18px;
   line-height: 1;
 }
@@ -776,7 +775,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #009970;
+  color: rgb(10, 116, 134);
 }
 
 #footer .footer-newsletter {
@@ -816,7 +815,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #009970;
+  background: #428BCA;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -824,7 +823,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #00664b;
+  background: rgb(71, 207, 231);
 }
 
 #footer .credits {
@@ -836,7 +835,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #009970;
+  background: #428BCA;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -849,7 +848,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #footer .social-links a:hover {
-  background: #00805d;
+  background: rgb(71, 207, 231);
   color: #fff;
   text-decoration: none;
 }
