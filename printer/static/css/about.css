@@ -124,7 +124,7 @@ html{
   padding-top: 8px;
   text-align: center;
   position: absolute;
-  background-color: #18d26e;
+  background-color: #428BCA;
   border-radius: 50%;
   text-align: center;
   border: 4px solid #fff;
@@ -145,7 +145,7 @@ html{
 }
 
 #about .about-col:hover i {
-  color: #18d26e;
+  color: #428BCA;
 }
 
 #about .about-col h2 {
@@ -199,7 +199,7 @@ html{
   display: block;
   width: 40px;
   height: 3px;
-  background: #18d26e;
+  background: #428BCA;
   bottom: 0;
   left: calc(50% - 20px);
 }
