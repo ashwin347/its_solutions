@@ -25,7 +25,7 @@ SECRET_KEY = 'i)%r52r+dpmt&oixhl!9d_4(f*35!#!3c_j1$w9ry4dd8&fmaq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','foxiton.pythonanywhere.com']
 
 
 # Application definition
