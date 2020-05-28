@@ -16,9 +16,6 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
     <!-- Vendor CSS Files -->
-    
-    <script src="static/js/venobox.min.js"></script>
-    <script src="static/vendor/jquery/jquery.min.js"></script>
     <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -30,7 +27,7 @@
 
     <link href="static/css/products.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
-    
+    <script src="static/vendor/jquery/jquery.min.js"></script>
 </head>
 
 <script>
@@ -55,10 +52,58 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            {% for brand in brands %}
-                            <li data-filter=".filter-{{brand.brandname}}">{{brand.brandname}}</li>
-                            {% endfor %}
+                            <li>
+                                <div class="col-md-12 ml-auto">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control1 fv" placeholder="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn border"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Sort By</li>
+                            <li>
+                                <div class="form-group">
+                                    <select name="price" id="price" class="form-control1">
+                                        <option value="" selected>Price</option>
+                                        <option value="25000-40000">25000-40000</option>
+                                        <option value="41000-60000">41000-60000</option>
+                                        <option value="61000-75000">61000-75000</option>
+                                        <option value="76000-100000">76000-100000</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <select name="Brands" id="Brands" class="form-control1">
+                                        <option value="" selected>Brands</option>
+                                        <option value="Mimaki">Mimaki</option>
+                                        <option value="Canon">Canon</option>
+                                        <option value="X1">X1</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <select name="slt" id="slt" class="form-control1">
+                                        <option value="" selected>Relevance</option>
+                                        <option value="Price Low to high">Mimaki</option>
+                                        <option value="Price High to low">Canon</option>
+                                        <option value="Availability">X1</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <select name="slt" id="slt" class="form-control1">
+                                        <option value="" selected>Relevance</option>
+                                        <option value="Price Low to high">Mimaki</option>
+                                        <option value="Price High to low">Canon</option>
+                                        <option value="Availability">X1</option>
+                                    </select>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +111,7 @@
 
                 <div class="row portfolio-container">
                     {% for product in products %}
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
+                    <div class="col-lg-3 col-md-3 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
                         onclick=pop('{{product.id}}') data-toggle="modal" data-target="#about">
                         <div class="portfolio-wrap">
                             <figure>
@@ -74,6 +119,7 @@
                                     alt="">
                                 <a href="#" class="link-preview " title="Preview"><i class="ion ion-eye"></i></a>
                             </figure>
+                            <hr style="width: 70%;">
 
                             <div class="portfolio-info">
                                 <h4>{{product.productname}}</h4>

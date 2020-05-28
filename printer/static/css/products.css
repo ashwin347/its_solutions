@@ -16,22 +16,13 @@
     cursor: pointer;
     margin: 15px 15px 15px 0;
     display: inline-block;
-    padding: 6px 20px;
     font-size: 12px;
-    line-height: 20px;
-    color: #007bff;
-    border-radius: 50px;
+    color: #121213;
     text-transform: uppercase;
-    background: #ecf5ff;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
   }
-  
-  #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-    background: #007bff;
-    color: #fff;
-  }
-  
+
   .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
   }
@@ -39,16 +30,16 @@
   .portfolio .portfolio-wrap {
     transition: 0.3s;
     border-radius: 10px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(240, 233, 233, 0.418);
   }
   
   .portfolio .portfolio-wrap:hover {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 15px rgba(168, 165, 165, 0);
   }
   
   .portfolio .portfolio-item {
     position: relative;
-    height: 450px;
+    height: 350px;
     overflow: hidden;
     margin-bottom: 30px;
   }
@@ -56,7 +47,7 @@
   .portfolio .portfolio-item figure {
     background: #000;
     overflow: hidden;
-    height: 260px;
+    height: 200px;
     position: relative;
     border-radius: 4px 4px 0 0;
     margin: 0;
@@ -75,7 +66,6 @@
     opacity: 0;
     line-height: 0;
     text-align: center;
-    width: 36px;
     height: 36px;
     background: #fff;
     border-radius: 50%;
@@ -83,7 +73,9 @@
     overflow: hidden;
     font-size: 20px;
   }
-  
+  .link-preview{
+    width: 36px;
+  }
   .portfolio .portfolio-item figure .link-preview i, .portfolio .portfolio-item figure .link-details i {
     color: #384046;
     line-height: 0;
@@ -120,13 +112,13 @@
   .portfolio .portfolio-item .portfolio-info {
     background: #fff;
     text-align: center;
-    padding: 30px;
-    height: 140px;
+    padding: 0 30px 30px 30px;
+    height: 110px;
     border-radius: 0 0 3px 3px;
   }
   
   .portfolio .portfolio-item .portfolio-info h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
   }
   
@@ -143,7 +135,7 @@
     margin: 0;
     color: #b8b8b8;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11px;
     text-transform: uppercase;
   }
  
@@ -198,4 +190,24 @@
   .about .icon-boxes p {
     font-size: 15px;
     color: #848484;
+  }
+  .form-control1{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+    .fv{
+      flex: 1 1 0%
+    }
+  .btn{
+    padding: 0 10px 0 10px;
   }

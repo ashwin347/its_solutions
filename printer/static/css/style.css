@@ -639,7 +639,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
+  background-color: #ffffffff;
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -852,3 +852,4 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #fff;
   text-decoration: none;
 }
+
