@@ -44,10 +44,9 @@
                 <div class="carousel-inner" role="listbox">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active"
-                        style="background-image: url('static/img/slider1.png');background-size:100%;">
+                    <div class="carousel-item active" style="background-image: url('static/img/slider1.png');">
                         <p class="animated fadeInUp font-weight-bold "
-                            style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:10%;">
+                            style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
                             We provide
                             all
                             the popular brands of
@@ -57,8 +56,7 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item"
-                        style="background-image: url('static/img/slider1.png');background-size:100%;">
+                    <div class="carousel-item" style="background-image: url('static/img/slider1.png');">
                         <p class="animated fadeInUp font-weight-bold "
                             style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
                             We provide
@@ -70,8 +68,7 @@
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="carousel-item"
-                        style="background-image: url('static/img/slider1.png');background-size:100%;">
+                    <div class="carousel-item" style="background-image: url('static/img/slider1.png');">
                         <p class="animated fadeInUp font-weight-bold "
                             style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
                             We provide
@@ -96,7 +93,24 @@
         </div>
         </div>
     </section><!-- End Hero -->
+
+    <div class="container text-center">
+        <h4 class="text-center font-weight-bold pt-3 animated fadeInUp" style="color: rgb(0, 0, 0);">The Trusted
+            Partners of
+        </h4>
+        <hr>
+        <div class="row pb-3" height="500" width="500">
+            <div class="col-lg-2"></div>
+            {% for brand in brands %}
+            <div class="col-sm-8  col-md-6 col-lg-4 animated fadeInUp  d-flex align-items-center m-auto">
+                <img src="{{ brand.brandimage }}" class="img-fluid m-auto" alt="" style="height: 30px; width:100px;">
+            </div>
+            {% endfor %}
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
     <!-- ======= Top Bar ======= -->
+
     <section id="topbar" class="d-none d-lg-block" style="background-color: #F1F0F2;">
         <div class="container clearfix">
             <div class="contact-info float-left">
