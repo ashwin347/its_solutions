@@ -31,8 +31,26 @@
 </head>
 
 <script>
-    a = [];
-    i = 0;
+    function pop(id){
+        {% for product in products %}
+        
+        {% endfor %}
+    }
+    function filter(category){
+        console.log(category)
+        value=document.getElementById(category).value;
+        if(category=='Brands'){
+            {% for product in products%}
+            bname='{{product.brand.brandname}}'
+            if(bname!=value){
+                document.getElementById('{{product.id}}').style.display="none";
+            }
+            else{
+                document.getElementById('{{product.id}}').style.display="block";
+            }
+            {% endfor %}
+        }
+    }
 </script>
 
 <body class="body-wrapper">
@@ -76,7 +94,7 @@
                             </li>
                             <li>
                                 <div class="form-group">
-                                    <select name="Brands" id="Brands" class="form-control1">
+                                    <select onchange="filter('Brands')" name="Brands" id="Brands" class="form-control1">
                                         <option value="" selected>Brands</option>
                                         <option value="Mimaki">Mimaki</option>
                                         <option value="Canon">Canon</option>
@@ -111,7 +129,7 @@
 
                 <div class="row portfolio-container">
                     {% for product in products %}
-                    <div class="col-lg-3 col-md-3 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
+                    <div id='{{product.id}}' class="col-lg-3 col-md-3 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
                         onclick=pop('{{product.id}}') data-toggle="modal" data-target="#about">
                         <div class="portfolio-wrap">
                             <figure>
