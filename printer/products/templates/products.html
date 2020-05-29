@@ -40,7 +40,15 @@
         console.log(category)
         value=document.getElementById(category).value;
         if(category=='Brands'){
-            {% for product in products%} 
+            {% for product in products%}
+            bname='{{product.brand.brandname}}'
+            if(bname!=value){
+                document.getElementById('{{product.id}}').style.display="none";
+            }
+            else{
+                document.getElementById('{{product.id}}').style.display="block";
+            }
+            {% endfor %}
         }
     }
 </script>
@@ -121,7 +129,7 @@
 
                 <div class="row portfolio-container">
                     {% for product in products %}
-                    <div class="col-lg-3 col-md-3 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
+                    <div id='{{product.id}}' class="col-lg-3 col-md-3 portfolio-item filter-{{product.brand.brandname}} wow fadeInUp"
                         onclick=pop('{{product.id}}') data-toggle="modal" data-target="#about">
                         <div class="portfolio-wrap">
                             <figure>
