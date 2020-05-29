@@ -95,10 +95,11 @@
                             <li>
                                 <div class="form-group">
                                     <select onchange="filter('Brands')" name="Brands" id="Brands" class="form-control1">
+                                        
                                         <option value="" selected>Brands</option>
-                                        <option value="Mimaki">Mimaki</option>
-                                        <option value="Canon">Canon</option>
-                                        <option value="X1">X1</option>
+                                        {% for brand in brands %}
+                                        <option value={{brand.brandname}}>{{brand.brandname}}</option>
+                                        {% endfor %}
                                     </select>
                                 </div>
                             </li>
