@@ -31,11 +31,13 @@
 </head>
 
 <body>
+
     <!-- ======= Header ======= -->
     <div id="header" class="p-0 m-0"></div><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
+
         <div class="hero-container">
             <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -44,39 +46,18 @@
                 <div class="carousel-inner" role="listbox">
 
                     <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url('static/img/slider1.png');">
-                        <p class="animated fadeInUp font-weight-bold "
-                            style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
-                            We provide
-                            all
-                            the popular brands of
-                            printers and printing
-                            cartilages. We help to find the best printing solutions needed for you.
-                        </p>
+                    <div class="carousel-item active" style="background-image: url('static/img/slider1.jpg');">
+
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url('static/img/slider1.png');">
-                        <p class="animated fadeInUp font-weight-bold "
-                            style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
-                            We provide
-                            all
-                            the popular brands of
-                            printers and printing
-                            cartilages. We help to find the best printing solutions needed for you.
-                        </p>
+                    <div class="carousel-item" style="background-image: url('static/img/about-plan.jpg');">
+
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url('static/img/slider1.png');">
-                        <p class="animated fadeInUp font-weight-bold "
-                            style="font-size: 20px;width:50%;float:right;margin-right:10%;margin-top:15%;">
-                            We provide
-                            all
-                            the popular brands of
-                            printers and printing
-                            cartilages. We help to find the best printing solutions needed for you.
-                        </p>
+                    <div class="carousel-item" style="background-image: url('static/img/about-vision.jpg');">
+
                     </div>
 
                 </div>
@@ -94,22 +75,78 @@
         </div>
     </section><!-- End Hero -->
 
-    <div class="container text-center">
-        <h4 class="text-center font-weight-bold pt-3 animated fadeInUp" style="color: rgb(0, 0, 0);">The Trusted
-            Partners of
-        </h4>
-        <hr>
-        <div class="row pb-3" height="500" width="500">
-            <div class="col-lg-2"></div>
-            {% for brand in brands %}
-            <div class="col-sm-8  col-md-6 col-lg-4 animated fadeInUp  d-flex align-items-center m-auto">
-                <img src="{{ brand.brandimage }}" class="img-fluid m-auto" alt="" style="height: 30px; width:100px;">
+    <!--<div class="container text-center">
+        <div class="container col-lg-9 border">
+            <h4 class="text-center font-weight-bold pt-3 animated fadeInUp" style="color: rgb(0, 0, 0);">The Trusted
+                Partners of
+            </h4>
+            <hr>
+            <div class="row pb-3" height="500" width="500">
+                <div class="col-lg-2"></div>
+                {% for brand in brands %}
+                <div class="col-sm-8  col-md-6 col-lg-4 animated fadeInUp  d-flex align-items-center m-auto">
+                    <img src="{{ brand.brandimage }}" class="img-fluid m-auto" alt=""
+                        style="height: 30px; width:100px;">
+                </div>
+                {% endfor %}
+                <div class="col-lg-2"></div>
             </div>
-            {% endfor %}
-            <div class="col-lg-2"></div>
         </div>
-    </div>
+    </div>-->
     <!-- ======= Top Bar ======= -->
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us" style="margin-top: -170px;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-4 col-lg-5">
+                    <div class="content">
+                        <h3>Why Choose Flexor for your company website?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                            optio ad corporis.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7 d-flex">
+                    <div class="icon-boxes d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-receipt"></i>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-cube-alt"></i>
+                                    <h4>Ullamco laboris ladore pan</h4>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-images"></i>
+                                    <h4>Labore consequatur</h4>
+                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
 
     <section id="topbar" class="d-none d-lg-block" style="background-color: #F1F0F2;">
         <div class="container clearfix">
@@ -367,6 +404,7 @@
     <script src="{% static 'vendor/jquery/jquery.nice-select.min.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
     <!-- Template Main JS File -->
     <script src="{% static 'js/main.js' %}"></script>
     <script type='text/javascript'>
